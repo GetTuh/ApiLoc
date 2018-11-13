@@ -7,6 +7,6 @@ def funkcja_szer_dlug(szerokosc):
     data =r.json()
     miejsca = data['restaurants']
     for miejsce in miejsca:
-        lista.append(str(miejsce['restaurant']['location']['city']))
+        lista.append(str(miejsce['restaurant']['location']))
     return str(lista)
 
