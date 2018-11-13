@@ -8,7 +8,8 @@ def wynik():
     szerokosc = request.form['szerokosc']
     dlugosc = request.form['dlugosc']
     zasieg = request.form['zasieg']
-    return funkcja_szer_dlug(szerokosc,dlugosc,zasieg)
+    return render_template("wynik.html")
+
 
 
 @app.route('/')
