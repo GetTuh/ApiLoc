@@ -6,7 +6,10 @@ app = Flask(__name__,template_folder='Strona')
 @app.route('/wynik',methods=['POST'])
 def wynik():
     szerokosc = request.form['szerokosc']
-    return funkcja_szer_dlug(szerokosc)
+    dlugosc = request.form['dlugosc']
+    zasieg = request.form['zasieg']
+
+    return funkcja_szer_dlug(szerokosc,dlugosc,zasieg)
 
 
 @app.route('/')
