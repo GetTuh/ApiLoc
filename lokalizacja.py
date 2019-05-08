@@ -10,6 +10,6 @@ def funkcja_szer_dlug(szerokosc,dlugosc,zasieg):
     for miejsce in miejsca:
         listaMiejsce.append(str(miejsce['restaurant']['name']))
         listaAdresow.append(str(miejsce['restaurant']['location']))
-    poukladane = "<br />".join(listaMiejsce)
-    return poukladane
+    posortowane = "<br />".join(listaMiejsce)
+    return posortowane
 
